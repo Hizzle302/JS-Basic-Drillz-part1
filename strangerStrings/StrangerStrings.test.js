@@ -61,7 +61,7 @@ test("return the last 3 characters of `input`", () => {
 test("return the middle character of `inputValue`", () => {
     // Given
     let strangerStrings = new StrangerStrings();
-    let inputValue = 'MethodMan';
+    let input = 'MethodMan';
 
     let expected = "o";
 
@@ -75,7 +75,7 @@ test("return the middle character of `inputValue`", () => {
 test("return the first sequence of characters", () => {
     // Given
     let strangerStrings = new StrangerStrings();
-    let inputValue = 'Wutang Clan';
+    let input = 'Wutang Clan';
 
     let expected = "Wutang";
 

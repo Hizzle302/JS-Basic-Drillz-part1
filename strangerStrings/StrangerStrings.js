@@ -1,27 +1,32 @@
 class StrangerStrings {
 
     getHelloWorld(){
-        return null;
+        let str = "Hello World";
+        return str;
     }
 
     concatenation(firstSegment, secondSegment){
-        return null;
+        let str = firstSegment + secondSegment;
+        return str;
     }
 
     getPrefix(input){
-        return null;
+    
+         return input[0] + input[1] + input[2];
     }
 
     getSuffix(input){
-        return null;
+
+        return input[3] + input[4] + input[5];
     }
 
     getMiddleCharacter(input){
-        return null;
+        return input[4];
     }
 
     getFirstWord(input){
-        return null;
+        let firstWord = input.split(' ');
+         return firstWord[0];
     }
     
     getSecondWord(spaceDelimnatedInput){

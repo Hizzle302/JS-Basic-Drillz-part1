@@ -75,7 +75,7 @@ test("return the middle character of `inputValue`", () => {
 test("return the first sequence of characters", () => {
     // Given
     let strangerStrings = new StrangerStrings();
-    let input = 'Wutang Clan';
+    let inputValue = 'Wutang Clan';
 
     let expected = "Wutang";
 
@@ -90,10 +90,7 @@ test("return the second sequence of characters", () => {
     // Given
     let strangerStrings = new StrangerStrings();
     let inputValue = 'Wutang Clan';
-
     let expected = "Clan";
-
-
     // When
     let actual = strangerStrings.getSecondWord(inputValue);
     //Then

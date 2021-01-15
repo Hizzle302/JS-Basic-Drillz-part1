@@ -11,26 +11,36 @@ class StrangerStrings {
     }
 
     getPrefix(input){
-    
-         return input[0] + input[1] + input[2];
+        let prefix = input.split("",3).join("");
+         return prefix;
     }
 
     getSuffix(input){
-
-        return input[3] + input[4] + input[5];
+        let characterArray = input.split("");
+        let sliceStart = characterArray.length - 3;
+        let sliceEnd = characterArray.length - 1;
+        let suffix = "";
+        for(let i = sliceStart; i <= sliceEnd; i++){
+            suffix = suffix + characterArray[i];
+            console.log("index " + i + " of characterArray = " + characterArray[i]);        
+        }
+        return suffix;
     }
 
     getMiddleCharacter(input){
         return input[4];
     }
 
-    getFirstWord(input){
-        let firstWord = input.split(' ');
-         return firstWord[0];
+    getFirstWord(inputValue){
+        let sentenceArray = inputValue.split(' ');
+        let firstWord = sentenceArray[0];
+         return firstWord;
     }
     
-    getSecondWord(spaceDelimnatedInput){
-        return null;
+    getSecondWord(inputValue){
+        let sentenceArray = inputValue.split(' ');
+        let secondWord = sentenceArray[1];
+        return secondWord;
     }
     
     reverse(input){

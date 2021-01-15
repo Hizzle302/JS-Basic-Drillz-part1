@@ -43,8 +43,12 @@ class StrangerStrings {
         return secondWord;
     }
     
-    reverse(input){
-        return null;
+    reverse(inputValue){
+        let newString = "";
+        for(let i = inputValue.length - 1; i >= 0; i--){
+            newString += inputValue[i];
+        }
+        return newString;
     }
 }
 
